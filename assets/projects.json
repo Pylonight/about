@@ -1,0 +1,161 @@
+[
+	{
+		"title":"Fragments",
+		"skills":[
+			"C#",
+			"Particle Illusion",
+			"Unity",
+			"OpenCanvas7",
+			"Photoshop"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Managed a team of 5 developing a 2D side-scrolling ARPG as game designer and artist using Unity. Drafted main plot, drew main characters with animations and produced particle effects."
+			}
+		],
+		"url":"pylonight.me/Fragments-web"
+	},
+	{
+		"title":"BBR on Mininet",
+		"skills":[
+			"C",
+			"TCP/IP",
+			"Quagga",
+			"SDN"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Implemented and analyzed a tentative version of BBR congestion control on Mininet, shortened average max RTT by 81.9% from 127ms to 23ms."
+			}
+		],
+		"url":"pylonight.me/ComputerNetworksMirror/lab4b.html"
+	},
+	{
+		"title":"Sentiment Analysis",
+		"skills":[
+			"Mathematica",
+			"Python",
+			"SVM"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Achieved ACC of 0.86 and AUC of 0.93 on Kaggle Amazon reviews dataset with 400,000 reviews, by performing series of dimension reduction on features and applying SVM model."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"Facebook Search",
+		"skills":[
+			"PHP",
+			"JavaScript",
+			"jQuery",
+			"Angular 2",
+			"Bootstrap",
+			"HTML5",
+			"Java",
+			"Android",
+			"RESTful",
+			"Google Cloud"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Developed and deployed a RESTful API agent on Google Cloud for easier use of Facebook Graph API. Built responsive website and Android app leveraging agent, allowing users to search Facebook featured contents."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"Hearts of Iron IV Mod",
+		"skills":[
+			"Clausewitz Markdown"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Devised unique national focus tree for Greece with ideology oriented branches, plotted around 30 new events for mediterranean countries, improved advanced gameplay as Greece."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"Helios-BluetoothCar",
+		"skills":[
+			"C",
+			"Verilog",
+			"FPGA",
+			"Hardware/Software Co-design",
+			"Kernel",
+			"MIPS"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Designed a toy car controlled via Bluetooth, following principle of Hardware/Software Co-design, using FPGA-CPU and ported Ucore as softcore and operating system respectively. Won Outstanding Undergraduate Thesis Award (first class) from Computer Science department."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"Ucore Porting",
+		"skills":[
+			"C",
+			"Kernel",
+			"MIPS"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Ported Unix-like operating system, ucore, from x86 to MIPS with one of classmates, to match FPGA-based softcore in MIPS architecture. Focused on exceptions and interrupts."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"HustNet",
+		"skills":[
+			"C++",
+			"TCP/IP"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Collaborated in building a simulated TCP/IP protocol suite enabling two hosts to communicate. Led a team of 4 and directed implementation of transport layer to completely support TCP and UDP."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"FPGA-CPU",
+		"skills":[
+			"Verilog",
+			"FPGA",
+			"MIPS"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Designed a 5-segment pipelined CPU running at 100MHz with forwarding on Nexys4 Board, following MIPS 32-bit instruction set, in Spartan-6 family. Implemented interfaces for high baud rate serial port and SRAM."
+			}
+		],
+		"url":""
+	},
+	{
+		"title":"Freeze!!",
+		"skills":[
+			"C#",
+			"XNA"
+		],
+		"descriptions":[
+			{
+				"title":"",
+				"content":"Built a WinPhone game for Imagine Cup 2012 based on XNA, with an UI/UX designer. Won second prize from Imagine Cup 2012 - Huazhong University of Science and Technology Campus Challenge."
+			}
+		],
+		"url":""
+	}
+]

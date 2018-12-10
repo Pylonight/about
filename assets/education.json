@@ -1,0 +1,16 @@
+[
+	{
+		"institution":"University of Southern California",
+		"degree":"M.Sc.",
+		"major":"Computer Science",
+		"graduation":"2018",
+		"gpa":"3.95"
+	},
+	{
+		"institution":"Huazhong University of Science and Technology",
+		"degree":"B.E.",
+		"major":"Computer Science",
+		"graduation":"2016",
+		"gpa":"3.95"
+	}
+]

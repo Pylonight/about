@@ -1,0 +1,122 @@
+[
+	{
+		"company":"USC Center for Systems and Software Engineering",
+		"location":"Los Angeles, CA",
+		"positions":[
+			{
+				"position":"Graduate Research Assistant",
+				"period":"May. 2018 - Dec. 2018",
+				"skills":[
+					"Java",
+					"Git",
+					"PostgreSQL"
+				],
+				"descriptions":[
+					{
+						"title":"Github Visualization",
+						"content":"Utilize JGit to collect data from Github repositories, track experience of developers over time, analyze code for software readability and maintainability, use D3.js for visualizations."
+					},
+					{
+						"title":"Technical Debt",
+						"content":"Cooperate with PhD student to analyze 91 open source projects with over 300,000 commits in total, conduct correlation tests between amount of technical debt and several factors."
+					}
+				]
+			}
+		]
+	},
+	{
+		"company":"Qrowdify, Inc",
+		"location":"Los Angeles, CA",
+		"positions":[
+			{
+				"position":"Frontend Developer Intern",
+				"period":"Jun. 2018 - Aug. 2018",
+				"skills":[
+					"HTML5",
+					"jQuery",
+					"Angular 4",
+					"CSS3",
+					"Bootstrap",
+					"OpenCanvas7",
+					"Photoshop"
+				],
+				"descriptions":[
+					{
+						"title":"Pilot Program",
+						"content":"Revamped UI for user and micro-community oriented pages, using jQuery and Bootstrap 3, under Angular SPA architecture. Created badges and coin design for pilot program and early access DApp."
+					}
+				]
+			}
+		]
+	},
+	{
+		"company":"CS Theory Lab, Huazhong University of Science and Technology",
+		"location":"Wuhan, China",
+		"positions":[
+			{
+				"position":"Research Assistant",
+				"period":"Mar. 2015 - Aug. 2015",
+				"skills":[
+					"Data Mining",
+					"C++",
+					"MATLAB"
+				],
+				"descriptions":[
+					{
+						"title":"Community Detection",
+						"content":"Developed tentative algorithm for community detection on multilayer networks based on BGLL, improved F1 score to 89.3% from 30.0%(GCE), 31.2%(Infomap) and 63.2%(LC) on Facebook Ugrad dataset."
+					}
+				]
+			}
+		]
+	},
+	{
+		"company":"Sicun Studio, Huazhong University of Science and Technology",
+		"location":"Wuhan, China",
+		"positions":[
+			{
+				"position":"Associate Director",
+				"period":"Apr. 2014 - Jan. 2015",
+				"skills":[
+					"Team Building"
+				],
+				"descriptions":[
+					{
+						"title":"Technical Recruitment",
+						"content":"Orchestrated technical recruitment in Spring 2014 and Fall 2014. Interviewed over 20 candidates. Organized probationary period presentations and reviews."
+					}
+				]
+			},{
+				"position":"Group Leader",
+				"period":"Nov. 2013 - Apr. 2014",
+				"skills":[
+					"PHP",
+					"MySQL"
+				],
+				"descriptions":[
+					{
+						"title":"Website Maintenance",
+						"content":"Focused on maintenance and upgrades for relaunched portal of University News Center."
+					}
+				]
+			},{
+				"position":"Backend Developer",
+				"period":"Oct. 2012 - Nov. 2013",
+				"skills":[
+					"C#",
+					"MySQL",
+					"CSS3",
+					"HTML",
+					"jQuery",
+					"JavaScript"
+				],
+				"descriptions":[
+					{
+						"title":"Web Development",
+						"content":"Redesigned user and member logic of University News Center Web Portal (zuiwan.net) for relaunch. Developed web portal for local housing agency using .NET framework 4.0."
+					}
+				]
+			}
+		]
+	}
+]

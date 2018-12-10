@@ -18,9 +18,9 @@
 var App = angular.module('App', []);
 App.controller('TodoCtrl', function($scope, $http) {
   $http.get('./assets/materials.json')
-       .then(function(res){
-          $scope.todos = res.data;                
-        });
+		.then(function(res){
+			$scope.todos = res.data;
+		});
 });
 </script>
 </body>
