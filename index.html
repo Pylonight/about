@@ -1,90 +1,379 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0033)https://woo.io/app/eng/profilepub -->
+<html ng-controller="AppCtrl">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-  <title>CSCI-551: Computer Networking</title>
+  <title ng-bind="pageTitle">Full Profile</title>
 
-  <link rel="stylesheet" href="./resources/style.css">
+  <link rel="stylesheet" type="text/css" href="resources/fonts-css.css">
+  <link rel="stylesheet" type="text/css" href="resources/Gotham-fonts.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,400italic,600italic,700italic,800italic|Montserrat:400,700">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="resources/main.css">
+  
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-animate.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-touch.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-messages.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.min.js"></script> -->
+
 </head>
 
-<body>
-  <header id="header">
-    <hgroup>
-      <h1 id="site-title">
-        <span class="full">CSCI-551: Computer Networking</span>
-        <span class="hidden-print short"></span>
-      </h1>
-    </hgroup>
-  </header>
+<body class="notmobile no-min-width mobile-ready candidate-view full-profile" ng-app="resume">
 
-  <nav id="navbar">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+  <div class="mainUIView" ui-view="">
+    <div class="cand edit">
+  
+      <div class="main-content container">
+        <div class="row cand-ob edit">
+          <div ui-view="" class="ob-container col-xs-12 col-lg-10 col-lg-offset-1">
+            <div class="cand-prof-wrapper">
+              <div class="cand-prof">
+                <div class="container-fluid" style="position: relative">
+                  <full-profile-switcher><div>
+                    <full-profile><div class="profile-pub-section profile-section" id="profile-pub-section">
 
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="">
-              <a href="lab1.html">Lab 1</a>
-            </li>
-            <li class="">
-              <a href="lab2.html">Lab 2</a>
-            </li>
-            <li class="">
-              <a href="lab3.html">Lab 3</a>
-            </li>
-            <li class="">
-              <a href="lab4a.html">Lab 4a</a>
-            </li>
-            <li class="">
-              <a href="lab4b.html">Lab 4b</a>
-            </li>
-          </ul>
+                      <!-- Outline and Contact -->
+                      <div class="row">
+                        <div class="profile-summary content-box">
+                          <div class="info-box">
+                            <full-profile-candidate-info><div class="full-profile-candidate-info">
+                              <candidate-basic-info><div class="candidate-basic-info">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-6">
+                                    <div class="cand-name-container">
+                                      <div class="cand-name-wrap">
+                                        <span class="cand-name">Yuchen (Ethan) Yan</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-6 hidden-xs">
+                                    <span class="location info" style="float:right">Los Angeles, California, United States</span>
+                                  </div>
+                                </div>
+
+                                <!-- For Wide Screen -->
+                                <div class="basic-info hidden-xs">
+                                  <p></p>
+                                  <p><span>I am actively looking for 2019 new grad/entry level opportunities in computer science field. Best described as engineer instead of scientist, as I am more into solving the problem, over formulating it. Thus I have various experience in multiple specializations, including hardware(mainly FPGA), operating system and network protocols(mainly transport layer), web development, game design and development, etc.</span></p>
+                                  <p><span>Will be graduating from USC, Los Angeles, CA, by the end of 2018. At USC I worked as a graduate research assistant, collaborating with PhD student to explore the possible causes of technical debts in open source projects.</span></p>
+                                  <p><span>I spend my time writing code, reading novels and learning new things. Currently trying to learn digital painting, with my precious Wacom Intuos Pro. Composing is the next target.</span></p>
+                                  <candidate-current-skills-strip><div class="info-section common-curr-skill-strip skills">
+                                    <span class="title prof-label-caption">Roles looking for:</span>
+                                    <div class="list skills-list">
+                                      <span class="curr-skill no-select">Software Engineer</span>
+                                      <span class="curr-skill no-select">Research Engineer</span>
+                                      <span class="curr-skill no-select">FPGA Engineer</span>
+                                      <span class="curr-skill no-select">Network Engineer</span>
+                                      <span class="curr-skill no-select">System Engineer</span>
+                                      <span class="curr-skill no-select">Full-stack Engineer</span>
+                                    </div>
+                                  </div></candidate-current-skills-strip>
+                                </div>
+
+                                <!-- For Small Screen -->
+                                <ul class="basic-info visible-xs">
+                                  <li class="years-of-exp">
+                                    Seeking 2019 New Grad Positions
+                                  </li>
+                                  <li class="location">
+                                    Los Angeles, California, United States
+                                  </li>
+                                </ul>
+                              </div></candidate-basic-info>
+
+                              <candidate-profile-actions><div class="candidate-profile-actions">
+                                <ul class="profile-actions clearfix">
+                                  <li class="profile-action email">
+                                    <a class="profile-action-label" target="_blank" title="pylonight@gmail.com" href="mailto:pylonight@gmail.com">
+                                      <i class="fa fa-envelope has-value" aria-hidden="true"></i>
+                                      <span>yanyuc@usc.edu</span>
+                                    </a>
+                                  </li>
+                                  <li class="profile-action phone allow-overflow">
+                                    <a class="profile-action-label" target="_blank" title="3233825238" href="tel:3233825238">
+                                      <i class="fa fa-phone has-value" aria-hidden="true"></i>
+                                      <span>3233825238</span>
+                                    </a>
+                                  </li>
+                                  <li class="profile-action linkedin allow-overflow">
+                                    <a class="profile-action-label" target="_blank" title="https://www.linkedin.com/in/ethan-yan/" href="https://www.linkedin.com/in/ethan-yan/">
+                                      <i class="fa fa-linkedin-square has-value" aria-hidden="true" ng-class="{&#39;has-value&#39;: ctrl.candidate.linkedinProfileUrl}"></i>
+                                      <span>Linkedin</span>
+                                    </a>
+                                  </li>
+                                  <li class="profile-action website allow-overflow">
+                                    <a class="profile-action-label" target="_blank" title="http://pylonight.me" href="http://pylonight.me/">
+                                      <i class="fa fa-github has-value" aria-hidden="true"></i>
+                                      <span>Github</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div></candidate-profile-actions>
+                            </div></full-profile-candidate-info>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Experience -->
+                      <div class="row mT15">
+                        <div class="info-box content-box col-xs-12 hover-shows-content">
+                          <div class="info-title content-title">
+                            Experience
+                          </div>
+
+                          <div class="info-content">
+                            <full-profile-experience>
+                              <div class="full-profile-experience">
+                                <div class="experience-info-container content-box sub-content-box">
+                                  <div class="left-pane">
+                                    <div class="header company-name word-break">
+                                      USC Center for Systems and Software Engineering
+                                    </div>
+                                  </div>
+                                  <div class="right-pane">
+                                    <ul class="experience-entries">
+                                      <li class="experience-entry">
+                                        <div class="bullet"></div>
+                                        <div class="row">
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="position">
+                                              <div class="header">Graduate Research Assistant</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="period">
+                                              <div class="header">May. 2018 - Dec. 2018</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="experience-skills mT10">
+                                          <div class="title">Skills</div>
+                                          <span class="experience-skill">Java</span>
+                                          <span class="experience-skill">Git</span>
+                                          <span class="experience-skill">PostgreSQL</span>
+                                        </div>
+                                        <div class="experience-description mT5">
+                                          <div class="title">Description</div>
+                                          <div class="description pre-wrap word-break"><p><span>Github Visualization: Utilize JGit to collect data from Github repositories, track experience of developers over time, analyze code for software readability and maintainability, use D3.js for visualizations.</span></p><p><span>Technical Debt: Cooperate with PhD student to analyze 91 open source projects with over 300,000 commits in total, conduct correlation tests between amount of technical debt and several factors.</span></p>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="experience-info-container content-box sub-content-box" ng-repeat="companyId in ctrl.companies">
+                                  <div class="left-pane">
+                                    <div ng-if="!ctrl.candidate.companiesMap[companyId].websiteUrl" class="header company-name word-break">
+                                      Sicun Studio, Huazhong University of Science and Technology
+                                    </div>
+                                  </div>
+                                  <div class="right-pane">
+                                    <ul class="experience-entries">
+                                      <li class="experience-entry" ng-repeat="item in ctrl.experienceByCompany[companyId]">
+                                        <div class="bullet"></div>
+                                        <div class="row">
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="position">
+                                              <div class="header">Associate Director</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="period">
+                                              <div class="header">Apr/2014 - Jan/2015</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="experience-skills mT10" ng-show="item.currentSkillsJson &amp;&amp; item.currentSkillsJson.length &gt; 0">
+                                          <div class="title">Skills</div>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">Team Building</span>
+                                        </div>
+                                        <div class="experience-description mT5">
+                                          <div class="title" ng-show="(item.extraInfo &amp;&amp; item.extraInfo.extraInfo.description) || !ctrl.isEmployerSide">Description</div>
+                                          <div class="description pre-wrap word-break" ng-bind-html="item.extraInfo.extraInfo.description" ng-show="item.extraInfo &amp;&amp; item.extraInfo.extraInfo.description"><p><span>Technical Recruitment: Orchestrated technical recruitment in Spring 2014 and Fall 2014. Interviewed over 20 candidates. Organized probationary period presentations and reviews.</span></p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li class="experience-entry" ng-repeat="item in ctrl.experienceByCompany[companyId]">
+                                        <div class="bullet"></div>
+                                        <div class="row">
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="position">
+                                              <div class="header">Group Leader</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="period">
+                                              <div class="header">Nov/2013 - Apr/2014</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="experience-skills mT10" ng-show="item.currentSkillsJson &amp;&amp; item.currentSkillsJson.length &gt; 0">
+                                          <div class="title">Skills</div>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">PHP</span>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">MySQL</span>
+                                        </div>
+                                        <div class="experience-description mT5">
+                                          <div class="title" ng-show="(item.extraInfo &amp;&amp; item.extraInfo.extraInfo.description) || !ctrl.isEmployerSide">Description</div>
+                                          <div class="description pre-wrap word-break" ng-bind-html="item.extraInfo.extraInfo.description" ng-show="item.extraInfo &amp;&amp; item.extraInfo.extraInfo.description"><p><span>Website Maintenance: Focused on maintenance and upgrades for relaunched portal of University News Center.</span></p>
+                                          </div>
+                                        </div>
+                                      </li>
+
+                                      <li class="experience-entry" ng-repeat="item in ctrl.experienceByCompany[companyId]">
+                                        <div class="bullet"></div>
+                                        <div class="row">
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="position">
+                                              <div class="header">Backend Developer</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-sm-6">
+                                            <div class="period">
+                                              <div class="header">Oct/2012 - Nov/2013</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="experience-skills mT10" ng-show="item.currentSkillsJson &amp;&amp; item.currentSkillsJson.length &gt; 0">
+                                          <div class="title">Skills</div>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">C#</span>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">MySQL</span>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">CSS3</span>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">HTML</span>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">jQuery</span>
+                                          <span class="experience-skill" ng-repeat="skill in item.currentSkillsJson">JavaScript</span>
+                                        </div>
+                                        <div class="experience-description mT5">
+                                          <div class="title" ng-show="(item.extraInfo &amp;&amp; item.extraInfo.extraInfo.description) || !ctrl.isEmployerSide">Description</div>
+                                          <div class="description pre-wrap word-break" ng-bind-html="item.extraInfo.extraInfo.description" ng-show="item.extraInfo &amp;&amp; item.extraInfo.extraInfo.description"><p><span>Web Development: Redesigned user and member logic of University News Center Web Portal (zuiwan.net) for relaunch. Developed web portal for local housing agency using .NET framework 4.0.</span></p>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </full-profile-experience>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Skills -->
+                      <div class="row mT15" style="margin-bottom:0px">
+                        <div class="skills info-box content-box col-xs-12">
+                          <div class="info-title content-title">Skills</div>
+                          <div class="info-content mT-4">
+                            <div skills="ctrl.candidate.skills" max-lines="100">
+                              <div><div class="skills row clearfix">
+                                <div class="skills-column col-xs-12 col-sm-4">
+                                  <div class="color1 col-title content-title">4 - 8 years</div>
+                                  <div title="C" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">7 yrs</span>
+                                    <span class="truncate skill-name">C</span>
+                                  </div><!----><div title="C++" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">5 yrs</span>
+                                    <span class="truncate skill-name">C++</span>
+                                  </div><!----><div title="Linux" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">4 yrs</span>
+                                    <span class="truncate skill-name">Linux</span>
+                                  </div><!----><div title="Verilog" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">4 yrs</span>
+                                    <span class="truncate skill-name">Verilog</span>
+                                  </div><!----><div title="FPGA" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">4 yrs</span>
+                                    <span class="truncate skill-name">FPGA</span>
+                                  </div><!----><div title="Git" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">4 yrs</span>
+                                    <span class="truncate skill-name">Git</span>
+                                  </div><!---->
+                                </div>
+
+                                <div class="skills-column col-xs-12 col-sm-4 last">
+                                  <div class="color2 col-title content-title">2 - 3 years</div>
+                                  <div title="HTML" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">3 yrs</span>
+                                    <span class="truncate skill-name">HTML</span>
+                                  </div><!----><div title="C#" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">3 yrs</span>
+                                    <span class="truncate skill-name">C#</span>
+                                  </div><!----><div title="MySQL" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">3 yrs</span>
+                                    <span class="truncate skill-name">MySQL</span>
+                                  </div><!----><div title="jQuery" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">2 yrs</span>
+                                    <span class="truncate skill-name">jQuery</span>
+                                  </div><!----><div title="Python" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">2 yrs</span>
+                                    <span class="truncate skill-name">Python</span>
+                                  </div><!----><div title="Web Development" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">2 yrs</span>
+                                    <span class="truncate skill-name">Web Development</span>
+                                  </div><!----><div title="JavaScript" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">2 yrs</span>
+                                    <span class="truncate skill-name">JavaScript</span>
+                                  </div><!----><div title="CSS" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">2 yrs</span>
+                                    <span class="truncate skill-name">CSS</span>
+                                  </div><!----><div title="Java" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">2 yrs</span>
+                                    <span class="truncate skill-name">Java</span>
+                                  </div><!----><div title="OpenCanvas7" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">OpenCanvas7</span>
+                                  </div><!----><div title="Photoshop" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">Photoshop</span>
+                                  </div><!----><div title="BootstrapJS" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">BootstrapJS</span>
+                                  </div><!----><div title="Angular 4" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">Angular 4</span>
+                                  </div><!----><div title="HTML5" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">HTML5</span>
+                                  </div><!----><div title="MATLAB" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">MATLAB</span>
+                                  </div><!----><div title="Data Mining" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">Data Mining</span>
+                                  </div><!----><div title="CSS3" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">CSS3</span>
+                                  </div><!----><div title="Team Building" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">Team Building</span>
+                                  </div><!----><div title="PHP" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">PHP</span>
+                                  </div><!----><div title="PostgreSQL" class="skill-item-wrapper content-box sub-content-box">
+                                    <span class="pull-right years">1 yrs</span>
+                                    <span class="truncate skill-name">PostgreSQL</span>
+                                  </div><!---->
+                                </div>
+                              </div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></full-profile>
+                  </div></full-profile-switcher>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </nav>
-
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div id="main" class="col-xs-12 col-sm-12">
-        <article>
-
-          Short reports for computer networks labs.
-
-  <footer>
-  </footer>
-
-
-
-        </article>
-      </div>
-    </div><!--/row-->
-  </div> <!-- /container -->
-
-  <hr>
-
-  <footer id="footer">
-    <p>Copyright © 2017, Yuchen Yan at yanyuche@usc.edu</p>
-  </footer>
-  <script src="./resources/jquery.min.js"></script>
-  <script src="./resources/bootstrap.min.js"></script>
-  <script src="./resources/site.js"></script>
-  <script>
-   (function(win, doc, script) {
-       
-   }(window, document, 'script'));
-  </script>
-
+    </div>
+  </div>
 </body>
 </html>
